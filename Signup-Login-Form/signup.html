@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Form</title>
+    <style>
+
+        * { 
+        box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(69, 75, 227);
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .container{
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            width: 400px;
+            box-shadow: 5px 5px 30px 5px yellow,
+            -5px -5px 30px 5px orange;
+        }
+
+        p{
+            font-size: 20px;
+            
+        }
+        #username,#password,#age,#bday,#email{
+            font-size: 18px;
+            outline: none;
+            width: 300px;
+            border-radius: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .submit{
+            color:white;
+            background-color: red;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        
+
+        .reset{
+            color: white;
+            background-color: blue;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        
+        span{
+            font-size: 16px;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+
+        input:focus{
+           border-color: rgb(50, 11, 241); 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form method="post">
+        <p>Enter your username : </p>
+            <input id="username" name="username" type="text" placeholder="Enter your name" required>
+        <br>
+        <p>Enter your password : </p>
+            <input id="password"  name="password" type="password" placeholder="Enter your password" required>
+        <br>
+        <p>Enter your age : </p>
+
+            <input id="age" name="age" type="number" min="18" max="100" placeholder="Enter your age" required>
+        <br>
+        <p>Enter your email address : </p>
+
+            <input id="email" name="email" type="email" required placeholder="Enter your email">
+        <br>
+        <p>Enter your birthday : </p>
+
+            <input id="bday"  name="birthday" type="date" required>
+        <br><br>
+        <input type="checkbox" required><span>I agree to the Terms and Conditions</span>
+        <br><br><br>
+        <a href="login.html">Already have an account? Login  </a>
+        <br><br><br>
+
+        <input class="submit" type="submit">
+        <input class="reset" type="reset">
+        
+        
+        
+    </form>
+
+    </div>
+
+
+</body>
+</html>
